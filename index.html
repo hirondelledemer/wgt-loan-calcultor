@@ -86,9 +86,10 @@
 
       // Calculating total payment
 
-      const total = (amount / months + interest).toFixed(2);
+      const total = amount / months + interest;
 
-      document.querySelector("#total").innerHTML = "€ per month: " + total;
+      document.querySelector("#total").innerHTML =
+        "€ per month: " + total.toFixed(2);
     }
   </script>
 </html>
